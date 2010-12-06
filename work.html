@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <title>Ink and Code - Work</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="ink and code, peter, posen, web, design, development, information, architecture, user, experience" />
+    <meta name="description" content="Ink and Code is a graphic, information, and experience design company." />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link type="text/css" rel="stylesheet" media="screen" href="css/screen.css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+</head>
+
+<body id="home">
+<div id="wrap">
+    <div id="search">
+        <input type="text" name="s" id="s" value="" />
+    </div>
+    <div id="header">
+        <h1><a href="index.html" title="Peter W. Posen Jr." id="logo">Ink and Code</a></h1>
+        <ul id="nav">
+            <li><a href="articles.html" title="Articles" id="nav-articles">Articles</a></li>
+            <li><a href="work.html" title="Work" id="nav-work">Work</a></li>
+        </ul>
+    </div>
+    <div id="content">
+        <h2>Lorem Ipsum Dolor Sit Amet</h2>
+        <img src="media/images/image-2.jpg" height="400" width="620" alt="" />
+        <ul id="image-nav">
+            <li><a href="#" id="image-thumbs-1"></a></li>
+            <li><a href="#" id="image-thumbs-2"></a></li>
+            <li><a href="#" id="image-thumbs-3"></a></li>
+            <li><a href="#" id="image-thumbs-4"></a></li>
+            <li><a href="#" id="image-thumbs-5"></a></li>
+            <li><a href="#" id="image-thumbs-6"></a></li>
+        </ul>
+        <p class="caption">Nunc auctor bibendum eros. Maecenas porta accumsan mauris.</p>
+        <p>Nunc auctor bibendum eros. Maecenas porta accumsan mauris. Etiam enim enim, 
+        elementum sed, bibendum quis, rhoncus non, metus. Fusce neque dolor, adipiscing 
+        sed, consectetuer et, <span class="highlight">lacinia sit amet, quam. Nunc auctor bibendum eros. Maecenas 
+        porta accumsan mauris. Etiam enim enim, bibendum quis,</span> bibendum quis, rhoncus 
+        non, metus. Fusce neque dolor, adipiscing sed, consectetuer et, lacinia sit amet, quam.</p>
+    </div>
+    <div id="wrap-teaser">
+        <h5>Related work</h5>
+        <div class="teaser-1">
+            <h3><a href="#" title="">Lorem Ipsum Dolor</a></h3>
+            <p>Nunc auctor bibendum eros. Maecenas porta accumsan mauris. Etiam enim enim, 
+            elementum sed, bibendum quis, rhoncus non. Nunc auctor bibendum eros. Maecenas 
+            porta accumsan mauris. Etiam enim enim, elementum sed, bibendum quis, rhoncus non. 
+            <span class="more"><a href="#" title="Read more" class="read-more">Read more</a></span></p>
+        </div>
+        <div class="teaser-2">
+            <h3><a href="#" title="">Lorem Ipsum Dolor</a></h3>
+            <p>Nunc auctor bibendum eros. Maecenas porta accumsan mauris. Etiam enim enim, 
+            elementum sed, bibendum quis, rhoncus non. Nunc auctor bibendum eros. Maecenas 
+            porta accumsan mauris. Etiam enim enim, elementum sed, bibendum quis, rhoncus non. 
+            <span class="more"><a href="#" title="Read more" class="read-more">Read more</a></span></p>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <ul id="footer">
+        <li><p>Copyright 2010 Ink and Code. All rights reserved.</p></li>
+        <li><p>Web site design by Ink and Code. Powered by <a href="#" title="">WordPress</a>. Valid <a href="#" title="">XHTML</a> and <a href="#" title="">CSS</a>.</p></li>
+    </ul>
+</div>
+<script type="text/javascript">
+    //<![CDATA[
+    jQuery(document).ready(function() {
+        $('#s').each(function() {
+            var search = 'Search...';
+            var empty = '';
+            $(this).attr('value', search);
+            $(this).focus(function() {
+                if (this.value == search) {
+                    this.value = empty;
+                }
+            });
+            $(this).blur(function() {
+                if (this.value == empty) {
+                    this.value = search;
+                }
+            });
+        });
+    });
+    //]]>
+</script>
+</body>
+
+</html>
